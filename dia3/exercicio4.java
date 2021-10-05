@@ -21,6 +21,10 @@ public class exercicio4 {
 			idade = read.nextInt();
 			System.out.println("\nDigite sua orientação sexual, 1-Feminino / 2-Masculino / 3-Outros: ");
 			n1 = read.nextInt();
+			while(n1<1 || n1>3){
+				System.out.println("Gênero inválido. Digite novamente: ");
+				n1 = read.nextInt();
+			}
 			if(n1==1) {
 				f++;
 			}
@@ -30,11 +34,14 @@ public class exercicio4 {
 			else if(n1==3) {
 				outro++;
 			}
-			else {
-				System.out.println("Entrada inválida, porém prosseguiremos com o código.");
-			}
+			
 			System.out.println("\nVocê se considera uma pessoa: 1-Calma / 2-Nervosa / 3-Agressiva: ");
 			n2 = read.nextInt();
+			
+			while(n2<1 || n2>3){
+				System.out.println("Caracteristica inválida. Digite novamente: ");
+				n2 = read.nextInt();
+			
 			if(n2==1) {
 				calm++;
 			}
@@ -75,5 +82,6 @@ public class exercicio4 {
 		System.out.printf("\nO número de outros calmos é de %d pessoas",outrocalm);
 		System.out.printf("\nO número de pessoas com mais de 40 anos e nervosas é de %d pessoas",maiornerv);
 		System.out.printf("\nO número de pessoas com menos de 18 anos e calmas é de %d pessoas",menorcalm);
+		}
 	}
 }

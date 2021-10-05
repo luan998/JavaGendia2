@@ -17,9 +17,16 @@ public class exercicio6 {
 				cont++;
 			}
 		}
+		
+		
 		while(n!=0);
-		cont-=1;
+		cont-=1;	
+		if(cont==0) {
+			System.out.println("Você não digitou nenhum número multiplo de 3.");
+		}
+		else {
 		System.out.println("A média dos números multiplos de 3 é:"+soman/cont);
+		}
 	}
 
 }

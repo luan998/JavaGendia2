@@ -6,7 +6,8 @@ public class exercicio6 {
 
 	public static void main(String[] args) {
 		
-		int cont=0,n,soman=0;
+		int cont=0,n;
+		float soman=0;
 		Scanner read = new Scanner(System.in);
 		do
 		{
